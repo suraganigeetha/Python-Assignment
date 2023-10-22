@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Utility Web App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Utility Web App</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#string-reverser">String Reverser</a></li>
+      <li><a href="#palindrome-checker">Palindrome Checker</a></li>
+      <li><a href="#tip-calculator">Tip Calculator</a></li>
+    </ul>
+  </nav>
+  <section id="string-reverser">
+    <h2>String Reverser</h2>
+    <input type="text" id="stringInput" placeholder="Enter a string">
+    <button onclick="reverseString()">Reverse</button>
+    <p id="reversedString"></p>
+  </section>
+  <section id="palindrome-checker">
+    <h2>Palindrome Checker</h2>
+    <input type="text" id="numberInput" placeholder="Enter a series of numbers">
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+    <p id="palindromeResult"></p>
+  </section>
+  <section id="tip-calculator">
+    <h2>Tip Calculator</h2>
+    <input type="number" id="billAmount" placeholder="Bill Subtotal">
+    <input type="number" id="tipPercentage" placeholder="Tip Percentage">
+    <button onclick="calculateTip()">Calculate Tip</button>
+    <p id="totalAmount"></p>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
